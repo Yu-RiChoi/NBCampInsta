@@ -120,13 +120,14 @@
 		736E007C2B6203AF00812525 /* NBCampInsta */ = {
 			isa = PBXGroup;
 			children = (
-				736E00912B6203FF00812525 /* Model */,
-				736E00922B62041100812525 /* View */,
 				736E007D2B6203AF00812525 /* AppDelegate.swift */,
 				736E007F2B6203AF00812525 /* SceneDelegate.swift */,
 				736E00862B6203B000812525 /* Assets.xcassets */,
 				736E00882B6203B000812525 /* LaunchScreen.storyboard */,
 				736E008B2B6203B000812525 /* Info.plist */,
+				736E00912B6203FF00812525 /* Model */,
+				736E00922B62041100812525 /* View */,
+				735D0E992B69C69E00CCE757 /* ViewModel */,
 			);
 			path = NBCampInsta;
 			sourceTree = "<group>";
@@ -147,7 +148,6 @@
 				735D0E9A2B69C6BE00CCE757 /* Profile */,
 				735D0E972B69C11500CCE757 /* ProfileDesign */,
 				736E00812B6203AF00812525 /* MainController.swift */,
-				735D0E992B69C69E00CCE757 /* ViewModel */,
 			);
 			path = View;
 			sourceTree = "<group>";
