@@ -34,6 +34,14 @@ class MainController: UIViewController {
         return button
     }()
     
+    private var randomVideoButton: UIButton = {
+        let button = UIButton()
+        button.setTitle("RandomVideoViewController", for: .normal)
+        button.setTitleColor(.systemBlue, for: .normal)
+        
+        return button
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
@@ -46,6 +54,7 @@ class MainController: UIViewController {
         profileDesignButton.addTarget(self, action: #selector(tappedProfileDesignButton), for: .touchUpInside)
         profileButton.addTarget(self, action: #selector(tappedProfileButton), for: .touchUpInside)
         coreDataButton.addTarget(self, action: #selector(tappedCoreDataButton), for: .touchUpInside)
+        randomVideoButton.addTarget(self, action: #selector(tappedRandomVideoButton), for: .touchUpInside)
     }
     
     @objc func tappedProfileDesignButton() {
@@ -66,12 +75,19 @@ class MainController: UIViewController {
         present(goCoreDataViewVC, animated: true, completion: nil)
     }
     
+    @objc func tappedRandomVideoButton() {
+        let goRandomVideoViewVC = RandomVideoViewController()
+        goRandomVideoViewVC.modalPresentationStyle = .fullScreen
+        present(goRandomVideoViewVC, animated: true, completion: nil)
+//        self.navigationController?.pushViewController(goRandomVideoViewVC, animated: true)
+    }
+    
     private func setAutoLayout() {
         view.addSubview(profileDesignButton)
         view.addSubview(profileButton)
         view.addSubview(coreDataButton)
+        view.addSubview(randomVideoButton)
 
-        
         profileDesignButton.snp.makeConstraints { make in
             make.centerY.equalTo(view.snp.centerY)
             make.centerX.equalTo(view.snp.centerX)
@@ -84,6 +100,11 @@ class MainController: UIViewController {
         
         coreDataButton.snp.makeConstraints { make in
             make.top.equalTo(profileButton.snp.bottom).offset(10)
+            make.centerX.equalTo(view.snp.centerX)
+        }
+        
+        randomVideoButton.snp.makeConstraints { make in
+            make.top.equalTo(coreDataButton.snp.bottom).offset(10)
             make.centerX.equalTo(view.snp.centerX)
         }
     }

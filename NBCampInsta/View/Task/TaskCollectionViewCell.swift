@@ -2,35 +2,69 @@
 //  TaskCollectionViewCell.swift
 //  NBCampInsta
 //
-//  Created by 최유리 on 1/31/24.
+//  Created by 최유리 on 2/2/24.
 //
 
 import UIKit
-import SnapKit
+
+protocol CoreDataTaskCellDelegate: AnyObject {
+    func valueChanged(with id: UUID?, isCompleted: Bool)
+}
 
 class TaskCollectionViewCell: UICollectionViewCell {
     
-    static let identifier = "TaskCollectionViewCell"
+    static var identifier = "TaskCollectionViewCell"
     
-    let taskView: UIView = {
-        let uiView = UIView()
-        uiView.backgroundColor = .brown
-        
-        return uiView
-    }()
+    private let titleLabel = UILabel()
+    private let isDoneSwitch = UISwitch()
+    private let strikeThroughView = UIView()
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
+    private var id: UUID?
+    weak var delegate: CoreDataTaskCellDelegate?
+    
+    func setUI() {
+        self.contentView.addSubview(titleLabel)
+        self.contentView.addSubview(isDoneSwitch)
+        self.contentView.addSubview(strikeThroughView)
         
-        contentView.addSubview(taskView)
-
-        taskView.snp.makeConstraints { make in
-            make.top.equalTo(self.snp.top).inset(30)
-            make.left.equalTo(self.snp.left).inset(30)
+        isDoneSwitch.addTarget(self, action: #selector(valueChanged), for: .valueChanged)
+        
+        setAutoLayout()
+    }
+    
+    func setTitle(_ title: String) {
+        titleLabel.text = title
+    }
+    
+    func setSwitch(_ value: Bool) {
+        isDoneSwitch.isOn = value
+    }
+    
+    func setId(_ id: UUID) {
+        self.id = id
+    }
+    
+    @objc func valueChanged() {
+        delegate?.valueChanged(with: id, isCompleted: isDoneSwitch.isOn)
+    }
+    
+    private func setAutoLayout() {
+        titleLabel.snp.makeConstraints { make in
+            make.left.equalTo(contentView.snp.left).inset(16)
+            make.centerY.equalTo(contentView.snp.centerY)
+        }
+        
+        isDoneSwitch.snp.makeConstraints { make in
+            make.right.equalTo(contentView.snp.right).inset(16)
+            make.centerY.equalTo(contentView.snp.centerY)
+        }
+        
+        strikeThroughView.snp.makeConstraints { make in
+            make.left.equalTo(titleLabel.snp.left)
+            make.right.equalTo(titleLabel.snp.right)
+            make.centerY.equalTo(titleLabel.snp.centerY)
+            make.height.equalTo(1)
         }
     }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
+
 }

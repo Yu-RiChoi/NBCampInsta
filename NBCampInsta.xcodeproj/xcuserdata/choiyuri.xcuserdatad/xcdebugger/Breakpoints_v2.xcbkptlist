@@ -84,5 +84,129 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5FFB15B3-CEC5-4953-B376-095A6C402D39"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NBCampInsta/View/Task/CoreDataManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "createtodo(title:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6F544FE5-EDC3-4E13-A6FC-E464B8A168CB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NBCampInsta/Video/RandomVideoViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "playVideo()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6F544FE5-EDC3-4E13-A6FC-E464B8A168CB - ad5cb8347102c06c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in NBCampInsta.RandomVideoViewController.playVideo() -&gt; ()"
+                  moduleName = "NBCampInsta"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/choiyuri/Desktop/sparta_iOS/%E1%84%8B%E1%85%A2%E1%86%B8%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF%20%E1%84%89%E1%85%B5%E1%86%B7%E1%84%92%E1%85%AA/NBCampInsta/NBCampInsta/Video/RandomVideoViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "1012">
+               </Location>
+               <Location
+                  uuid = "6F544FE5-EDC3-4E13-A6FC-E464B8A168CB - a7c83b65ec214584"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) await resume partial function for closure #1 @Sendable () async -&gt; () in NBCampInsta.RandomVideoViewController.playVideo() -&gt; ()"
+                  moduleName = "NBCampInsta"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/choiyuri/Desktop/sparta_iOS/%E1%84%8B%E1%85%A2%E1%86%B8%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF%20%E1%84%89%E1%85%B5%E1%86%B7%E1%84%92%E1%85%AA/NBCampInsta/NBCampInsta/Video/RandomVideoViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "36">
+               </Location>
+               <Location
+                  uuid = "6F544FE5-EDC3-4E13-A6FC-E464B8A168CB - e8e4bd3a55348711"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for closure #1 @Sendable () async -&gt; () in NBCampInsta.RandomVideoViewController.playVideo() -&gt; ()"
+                  moduleName = "NBCampInsta"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/choiyuri/Desktop/sparta_iOS/%E1%84%8B%E1%85%A2%E1%86%B8%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF%20%E1%84%89%E1%85%B5%E1%86%B7%E1%84%92%E1%85%AA/NBCampInsta/NBCampInsta/Video/RandomVideoViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  uuid = "6F544FE5-EDC3-4E13-A6FC-E464B8A168CB - e8e4bd3a553487ee"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for closure #1 @Sendable () async -&gt; () in NBCampInsta.RandomVideoViewController.playVideo() -&gt; ()"
+                  moduleName = "NBCampInsta"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/choiyuri/Desktop/sparta_iOS/%E1%84%8B%E1%85%A2%E1%86%B8%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF%20%E1%84%89%E1%85%B5%E1%86%B7%E1%84%92%E1%85%AA/NBCampInsta/NBCampInsta/Video/RandomVideoViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "140">
+               </Location>
+               <Location
+                  uuid = "6F544FE5-EDC3-4E13-A6FC-E464B8A168CB - 1520a0bd46c265a1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(6) suspend resume partial function for closure #1 @Sendable () async -&gt; () in NBCampInsta.RandomVideoViewController.playVideo() -&gt; ()"
+                  moduleName = "NBCampInsta"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/choiyuri/Desktop/sparta_iOS/%E1%84%8B%E1%85%A2%E1%86%B8%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF%20%E1%84%89%E1%85%B5%E1%86%B7%E1%84%92%E1%85%AA/NBCampInsta/NBCampInsta/Video/RandomVideoViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "988">
+               </Location>
+               <Location
+                  uuid = "6F544FE5-EDC3-4E13-A6FC-E464B8A168CB - ac57e60ef2ec0e68"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor @Sendable () -&gt; () in closure #1 @Sendable () async -&gt; () in NBCampInsta.RandomVideoViewController.playVideo() -&gt; ()"
+                  moduleName = "NBCampInsta"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/choiyuri/Desktop/sparta_iOS/%E1%84%8B%E1%85%A2%E1%86%B8%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF%20%E1%84%89%E1%85%B5%E1%86%B7%E1%84%92%E1%85%AA/NBCampInsta/NBCampInsta/Video/RandomVideoViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "124">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
