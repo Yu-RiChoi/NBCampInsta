@@ -60,7 +60,6 @@ class GalleryCollectionView: UICollectionView, UICollectionViewDelegate {
 extension GalleryCollectionView: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        print(pictures.count)
         return pictures.count
     }
     
